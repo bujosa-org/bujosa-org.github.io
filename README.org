@@ -1,2 +1,2 @@
 * bujosa-org
-Para la página web de la organización en GitHub bujosa-org
+Para la [[https://bujosa-org.github.io/][página web]] de la organización en GitHub ~bujosa-org~.
