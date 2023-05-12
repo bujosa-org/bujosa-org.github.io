@@ -1,0 +1,128 @@
+#+title:  Página web de Marcos Bujosa en GitHub
+#+author: Marcos Bujosa
+#+email:  mbujosab@ucm.es
+#+LANGUAGE: es-es
+
+# ###########
+# ESTO DA EL FORMATO FINAL DE LA PÁGINA WEB VÉASE [[https://olmon.gitlab.io/org-themes/]]
+#+setupfile: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+# +setupfile: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+# ##########
+
+#+begin_comment
+Algunas indicaciones o comentarios dentro de este código, pero que no
+se ven en la web.
+
+Lo que se escribe en este documento es el contenido estructurado (es
+decir, hay que centrarse en qué información se incluye y cómo se
+estructura dicha información).
+
+El formato es secundario, se puede diseñar uno específico, pero hay
+muchas opciones enla web que se pueden usar). Véase por ejemplo
+[[https://olmon.gitlab.io/org-themes/]]... (pero hay más).
+
+También es exportable a pdf, word, markdown, etc. 
+#+end_comment
+
+
+* Información general
+
+En esta página mostraré /tarará/ y mostraré /tararí/
+
+** COMMENT Sección oculta ¡Qué misterio!
+
+Esto no se ve... qué conveniente
+
+
+
+** Material de interés
+
+Casi todo está en el propio GitHub
+
+  1. [[https://github.com/mbujosab/CursoDeAlgebraLineal][Libro de mates]] (pinchar en [[https://github.com/mbujosab/CursoDeAlgebraLineal/blob/main/libro.pdf][libro.pdf]] y descargar)
+  2. [[https://github.com/mbujosab/MatematicasII][Material de clase y exámenes pasados]]
+  3. [[https://github.com/mbujosab/nacal-latex-package][Paquete de $\LaTeX{}$ con la notación usada en el material]]
+  4. [[https://github.com/mbujosab/nacallib][Librería en Python para el curso de mates]] (el paquete se instala desde [[https://pypi.org/project/nacal/][aquí]]
+  5. ... y aún hay más...y ¿para qué?... visto lo visto para nada.
+
+*** Otras fuentes de información
+
+  Por ejemplo la [[https://www.ucm.es/fundamentos-analisis-economico2/algebra-2][web]] de la asignatura
+
+  Añadamos una imagen:
+  
+  #+attr_html: :width 300px
+  https://www.ucm.es/themes/ucm16/media/img/logo.png
+  
+
+** Investigación
+
+Uy... aquí no hay nada... ji, ji. Pero podemos aparentar que
+investigamos:
+
+*¡Último descubrimiento!*
+
+Esta semana hemos descubierto que: si $a_i=i$, $\forall i\in\mathbb{N}$:
+$$\sum_{i=1}^4 a_i = 10$$.
+
+~Si, si... ¡podemos usar $\LaTeX{}$!~
+
+** Miembros del equipo
+
+Por ahora estoy solito... espero que se apunte alguien, o será muy
+aburrido.
+
+
+* Información particular
+
+Estoy poco inspirado... pero esto es solo un ensayo para ver si a
+Elena le puede servir para montar una página para su equipo...
+  
+** TODO Temas _*Importantes*_ a tratar en el grupo de investigación [1/4]
++ [ ] Confirmar un día para una comilona
++ [ ] Confirmar un día para una cenita
++ [ ] Decidir qué peli veremos este finde
++ [X] Y por último, hacer como que hacemos algo
+
+Vaya... parece que la última tarea es la primera que hemos acabado.
+   
+
+* Información muy útil
+
+** Sección
+
+Bla
+
+*** Subsección
+
+Bla Bla
+
+**** subsubsección
+
+Bla Bla Bla
+
+***** subsubsección
+
+Je, je.. ya no pienso repetirme...
+
+***** subsubsección
+
+Bli, bli 
+
+**** Una tabla
+
+|-----+--------+---------------|
+| Las | tablas | con  org mode |
+|-----+--------+---------------|
+| son | muy    | sencillas     |
+| ¿o  | no     | te lo parece? |
+| A   | mi     | si            |
+|-----+--------+---------------|
+
+** La info más importante
+
+*** Para saber más de org mode
+Visita [[https://orgmode.org/]]
+
+*** Recomendación importante para tu vida como PDI
+Y si puedes usa [[https://www.gnu.org/software/emacs/][emacs]] para todo ¡es el mejor editor de mundo!
