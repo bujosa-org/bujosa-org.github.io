@@ -3,18 +3,197 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es-es" xml:lang="es-es">
 <head>
-<!-- 2023-05-12 vie 16:15 -->
+<!-- 2023-05-12 vie 17:48 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Página web de Marcos Bujosa en GitHub</title>
 <meta name="author" content="Marcos Bujosa" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="worg.css" />
 <script>
   window.MathJax = {
     tex: {
@@ -55,33 +234,33 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgdf2c265">1. Información general</a>
+<li><a href="#orgfab3e14">1. Información general</a>
 <ul>
-<li><a href="#org9cd9897">1.1. Material de interés</a>
+<li><a href="#orgae63e11">1.1. Material de interés</a>
 <ul>
-<li><a href="#org50f491a">1.1.1. Otras fuentes de información</a></li>
+<li><a href="#org830c6ff">1.1.1. Otras fuentes de información</a></li>
 </ul>
 </li>
-<li><a href="#org95fefee">1.2. Investigación</a></li>
-<li><a href="#orga48316a">1.3. Miembros del equipo</a></li>
+<li><a href="#orgd124926">1.2. Investigación</a></li>
+<li><a href="#org17d64e6">1.3. Miembros del equipo</a></li>
 </ul>
 </li>
-<li><a href="#orgb6c020b">2. Información particular</a>
+<li><a href="#org281c5b7">2. Información particular</a>
 <ul>
-<li><a href="#org7ae617b">2.1. <span class="todo TODO">TODO</span> Temas <span class="underline"><b>Importantes</b></span> a tratar en el grupo de investigación <code>[1/4]</code></a></li>
+<li><a href="#org6f4ee7e">2.1. <span class="todo TODO">TODO</span> Temas <span class="underline"><b>Importantes</b></span> a tratar en el grupo de investigación <code>[1/4]</code></a></li>
 </ul>
 </li>
-<li><a href="#org4017c47">3. Información muy útil</a>
+<li><a href="#org37f1bb2">3. Información muy útil</a>
 <ul>
-<li><a href="#orged46b35">3.1. Sección</a>
+<li><a href="#orgb8ae1fc">3.1. Sección</a>
 <ul>
-<li><a href="#org01ac043">3.1.1. Subsección</a></li>
+<li><a href="#orgcfe76dd">3.1.1. Subsección</a></li>
 </ul>
 </li>
-<li><a href="#org4a4a485">3.2. La info más importante</a>
+<li><a href="#orgad50a07">3.2. La info más importante</a>
 <ul>
-<li><a href="#org35e2b33">3.2.1. Para saber más de org mode</a></li>
-<li><a href="#org04406dc">3.2.2. Recomendación importante para tu vida como PDI</a></li>
+<li><a href="#org98d17fd">3.2.1. Para saber más de org mode</a></li>
+<li><a href="#org43e9347">3.2.2. Recomendación importante para tu vida como PDI</a></li>
 </ul>
 </li>
 </ul>
@@ -91,16 +270,16 @@
 </div>
 
 
-<div id="outline-container-orgdf2c265" class="outline-2">
-<h2 id="orgdf2c265"><span class="section-number-2">1.</span> Información general</h2>
+<div id="outline-container-orgfab3e14" class="outline-2">
+<h2 id="orgfab3e14"><span class="section-number-2">1.</span> Información general</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 En esta página mostraré <i>tarará</i> y mostraré <i>tararí</i>
 </p>
 </div>
 
-<div id="outline-container-org9cd9897" class="outline-3">
-<h3 id="org9cd9897"><span class="section-number-3">1.1.</span> Material de interés</h3>
+<div id="outline-container-orgae63e11" class="outline-3">
+<h3 id="orgae63e11"><span class="section-number-3">1.1.</span> Material de interés</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Casi todo está en el propio GitHub
@@ -115,8 +294,8 @@ Casi todo está en el propio GitHub
 </ol>
 </div>
 
-<div id="outline-container-org50f491a" class="outline-4">
-<h4 id="org50f491a"><span class="section-number-4">1.1.1.</span> Otras fuentes de información</h4>
+<div id="outline-container-org830c6ff" class="outline-4">
+<h4 id="org830c6ff"><span class="section-number-4">1.1.1.</span> Otras fuentes de información</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <p>
 Por ejemplo la <a href="https://www.ucm.es/fundamentos-analisis-economico2/algebra-2">web</a> de la asignatura
@@ -127,7 +306,7 @@ Añadamos una imagen:
 </p>
 
 
-<div id="orgbb62b12" class="figure">
+<div id="org10d31a7" class="figure">
 <p><img src="https://www.ucm.es/themes/ucm16/media/img/logo.png" alt="logo.png" width="300px" />
 </p>
 </div>
@@ -136,8 +315,8 @@ Añadamos una imagen:
 </div>
 
 
-<div id="outline-container-org95fefee" class="outline-3">
-<h3 id="org95fefee"><span class="section-number-3">1.2.</span> Investigación</h3>
+<div id="outline-container-orgd124926" class="outline-3">
+<h3 id="orgd124926"><span class="section-number-3">1.2.</span> Investigación</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Uy&#x2026; aquí no hay nada&#x2026; ji, ji. Pero podemos aparentar que
@@ -159,8 +338,8 @@ Esta semana hemos descubierto que: si \(a_i=i\), \(\forall i\in\mathbb{N}\):
 </div>
 </div>
 
-<div id="outline-container-orga48316a" class="outline-3">
-<h3 id="orga48316a"><span class="section-number-3">1.3.</span> Miembros del equipo</h3>
+<div id="outline-container-org17d64e6" class="outline-3">
+<h3 id="org17d64e6"><span class="section-number-3">1.3.</span> Miembros del equipo</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Por ahora estoy solito&#x2026; espero que se apunte alguien, o será muy
@@ -171,8 +350,8 @@ aburrido.
 </div>
 
 
-<div id="outline-container-orgb6c020b" class="outline-2">
-<h2 id="orgb6c020b"><span class="section-number-2">2.</span> Información particular</h2>
+<div id="outline-container-org281c5b7" class="outline-2">
+<h2 id="org281c5b7"><span class="section-number-2">2.</span> Información particular</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Estoy poco inspirado&#x2026; pero esto es solo un ensayo para ver si a
@@ -180,8 +359,8 @@ Elena le puede servir para montar una página para su equipo&#x2026;
 </p>
 </div>
 
-<div id="outline-container-org7ae617b" class="outline-3">
-<h3 id="org7ae617b"><span class="section-number-3">2.1.</span> <span class="todo TODO">TODO</span> Temas <span class="underline"><b>Importantes</b></span> a tratar en el grupo de investigación <code>[1/4]</code></h3>
+<div id="outline-container-org6f4ee7e" class="outline-3">
+<h3 id="org6f4ee7e"><span class="section-number-3">2.1.</span> <span class="todo TODO">TODO</span> Temas <span class="underline"><b>Importantes</b></span> a tratar en el grupo de investigación <code>[1/4]</code></h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Confirmar un día para una comilona</li>
@@ -198,20 +377,20 @@ Vaya&#x2026; parece que la última tarea es la primera que hemos acabado.
 </div>
 
 
-<div id="outline-container-org4017c47" class="outline-2">
-<h2 id="org4017c47"><span class="section-number-2">3.</span> Información muy útil</h2>
+<div id="outline-container-org37f1bb2" class="outline-2">
+<h2 id="org37f1bb2"><span class="section-number-2">3.</span> Información muy útil</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orged46b35" class="outline-3">
-<h3 id="orged46b35"><span class="section-number-3">3.1.</span> Sección</h3>
+<div id="outline-container-orgb8ae1fc" class="outline-3">
+<h3 id="orgb8ae1fc"><span class="section-number-3">3.1.</span> Sección</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Bla
 </p>
 </div>
 
-<div id="outline-container-org01ac043" class="outline-4">
-<h4 id="org01ac043"><span class="section-number-4">3.1.1.</span> Subsección</h4>
+<div id="outline-container-orgcfe76dd" class="outline-4">
+<h4 id="orgcfe76dd"><span class="section-number-4">3.1.1.</span> Subsección</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 Bla Bla
@@ -219,7 +398,7 @@ Bla Bla
 </div>
 
 <ol class="org-ol">
-<li><a id="orgbf77dad"></a>subsubsección<br />
+<li><a id="org612f56c"></a>subsubsección<br />
 <div class="outline-text-5" id="text-3-1-1-1">
 <p>
 Bla Bla Bla
@@ -227,7 +406,7 @@ Bla Bla Bla
 </div>
 
 <ol class="org-ol">
-<li><a id="orgcce6c88"></a>subsubsección<br />
+<li><a id="orgc268bf8"></a>subsubsección<br />
 <div class="outline-text-6" id="text-3-1-1-1-1">
 <p>
 Je, je.. ya no pienso repetirme&#x2026;
@@ -235,7 +414,7 @@ Je, je.. ya no pienso repetirme&#x2026;
 </div>
 </li>
 
-<li><a id="org110ef65"></a>subsubsección<br />
+<li><a id="orgb60c093"></a>subsubsección<br />
 <div class="outline-text-6" id="text-3-1-1-1-2">
 <p>
 Bli, bli 
@@ -245,7 +424,7 @@ Bli, bli
 </ol>
 </li>
 
-<li><a id="orge44d802"></a>Una tabla<br />
+<li><a id="org6fe688e"></a>Una tabla<br />
 <div class="outline-text-5" id="text-3-1-1-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -290,12 +469,12 @@ Bli, bli
 </div>
 </div>
 
-<div id="outline-container-org4a4a485" class="outline-3">
-<h3 id="org4a4a485"><span class="section-number-3">3.2.</span> La info más importante</h3>
+<div id="outline-container-orgad50a07" class="outline-3">
+<h3 id="orgad50a07"><span class="section-number-3">3.2.</span> La info más importante</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-org35e2b33" class="outline-4">
-<h4 id="org35e2b33"><span class="section-number-4">3.2.1.</span> Para saber más de org mode</h4>
+<div id="outline-container-org98d17fd" class="outline-4">
+<h4 id="org98d17fd"><span class="section-number-4">3.2.1.</span> Para saber más de org mode</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <p>
 Visita <a href="https://orgmode.org/">https://orgmode.org/</a>
@@ -303,8 +482,8 @@ Visita <a href="https://orgmode.org/">https://orgmode.org/</a>
 </div>
 </div>
 
-<div id="outline-container-org04406dc" class="outline-4">
-<h4 id="org04406dc"><span class="section-number-4">3.2.2.</span> Recomendación importante para tu vida como PDI</h4>
+<div id="outline-container-org43e9347" class="outline-4">
+<h4 id="org43e9347"><span class="section-number-4">3.2.2.</span> Recomendación importante para tu vida como PDI</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <p>
 Y si puedes usa <a href="https://www.gnu.org/software/emacs/">emacs</a> para todo ¡es el mejor editor de mundo!
@@ -316,7 +495,7 @@ Y si puedes usa <a href="https://www.gnu.org/software/emacs/">emacs</a> para tod
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Marcos Bujosa</p>
-<p class="date">Created: 2023-05-12 vie 16:15</p>
+<p class="date">Created: 2023-05-12 vie 17:48</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -5,8 +5,23 @@
 
 # ###########
 # ESTO DA EL FORMATO FINAL DE LA PÁGINA WEB VÉASE [[https://olmon.gitlab.io/org-themes/]]
-#+setupfile: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+# +setupfile: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 # +setupfile: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+
+# +HTML_HEAD: <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+# +HTML_HEAD_EXTRA: <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+
+# +OPTIONS: toc:nil num:3 H:4 ^:nil pri:t
+# +HTML_HEAD: <link rel="stylesheet" type="text/css" href="org.css"/>
+
+# +HTML_HEAD: <link rel="stylesheet" type="text/css" href="style1.css" />
+# +HTML_HEAD_EXTRA: <link rel="alternate stylesheet" type="text/css" href="style2.css" />
+
+# +HTML_HEAD: <link href="http://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet"></link>
+# +HTML_HEAD: <link href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" rel="stylesheet"></link>
+# +HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://orgmode.org/worg/style/worg.css"/>
+# +HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="worg.css" />
 # ##########
 
 #+begin_comment
